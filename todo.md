@@ -11,8 +11,8 @@
         * style.css 
     * js
         * scripts.js 
-* bootstrap.php (require autoload composer and routing.php)
-* index.php
+* bootstrap.php (add require autoload composer and routing.php)
+* index.php (add 'require bootstrap.php')
 * routing.php (create base routing to App)
 
 ## Install composer libraries
@@ -21,6 +21,6 @@
 - josantonius/request
 
 ## Prepare HTML structure
-* core/page/header.php (included HTML5 doctype, links to stylesheets)
+* core/page/header.php (included HTML5 doctype, links to stylesheets, include Roboto font from Google fonts [300,400 weight])
 * core/page/footer.php (include scripts eg. bootstrap)
-* index.php (require bootstrap.php)
+* core/page/index.php (display hello world with loaded bootstrap)
