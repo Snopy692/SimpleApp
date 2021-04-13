@@ -1,0 +1,14 @@
+{
+    "name": "oliver/simple-app",
+    "description": "my first php app",
+    "authors": [
+        {
+            "name": "Oliver Hitzer",
+            "email": "oliverhitzer@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "twbs/bootstrap": "5.0.0-beta3"
+    }
+}
