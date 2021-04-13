@@ -1,4 +1,3 @@
-<?php require "composer.php"; ?>
 <!DOCTYPE html>
 <html lang="pl">
 <head>

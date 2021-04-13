@@ -9,6 +9,8 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "twbs/bootstrap": "5.0.0-beta3"
+        "php": ">=5.3.0",
+        "bramus/router": "~1.5",
+        "josantonius/session": "^1.0"
     }
 }
