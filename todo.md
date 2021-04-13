@@ -19,8 +19,16 @@
 - twbs/bootstrap
 - bramus/router
 - josantonius/request
+- components/font-awesome
 
 ## Prepare HTML structure
-* core/page/header.php (included HTML5 doctype, links to stylesheets, include Roboto font from Google fonts [300,400 weight])
+* core/page/header.php (included HTML5 doctype, links to stylesheets, include Roboto font from Google fonts [300,400 weight], FontAwesome)
 * core/page/footer.php (include scripts eg. bootstrap)
 * core/page/index.php (display hello world with loaded bootstrap)
+
+
+## Database structure
+* user [id,email,password,created,changed]
+* user_data [id,uid,first_name,last_name]
+* reservation [id,uid,type,description,date]
+* reservation_type [id,name]
