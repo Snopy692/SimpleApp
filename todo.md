@@ -4,14 +4,14 @@
 * core
     * controller (_Application controllers_)
     * helper (_Application helper classes_)
-	* classes (_Application base engine classes_)
+    * classes (_Application base engine classes_)
     * model (_Application models - need to DB_)
     * repository (_Application Database models repository_)
     * views (_Application views templates_)
-		* partial (_Partials - eg. menu_)
-		* mail (_Mail templates_)
-		* region (_Region templates - eg header, footer_)
-	* public (_Application uploaded files_)
+        * partial (_Partials - eg. menu_)
+        * mail (_Mail templates_)
+        * region (_Region templates - eg header, footer_)
+    * public (_Application uploaded files_)
 * assests (_Application CSS/JS/SCSS files_)
     * css
         * style.css 
@@ -64,11 +64,51 @@ http://aspercz.pl/asperczpl/programowanie/php/php/11_phpmyadmin/relacje_2.pdf
 * vat_number (VARCHAR 255|NOT NULL)
 ```
 
-### Table _service_
+### Table _car_
+```
+* id (int|AUTO INCREMENT)
+* full_name (VARCHAR 255|NOT NULL)
+* segment (INT|NOT NULL) - Reference to car_segment.id
+* car_type (INT|NOT NULL) - Reference to car_type.id
+* fuel_type (INT|NOT NULL) - Reference to fule_type.id
+* transmission_type (INT|NOT NULL) - Reference to transmission_type.id
+* seats_number (INT|NOT NULL)
+* fuel_consumption (FLOAT|NOT NULL)
+* trunk_capacity (INT|NOT NULL)
+* min_driver_age (INT|NOT NULL)
+```
+
+### Table _car_segment_
 ```
 * id (int|AUTO INCREMENT)
 * name (VARCHAR 255|NOT NULL)
+```
+
+### Table _car_type_
+```
+* id (int|AUTO INCREMENT)
+* name (VARCHAR 255|NOT NULL)
+```
+
+### Table _car_fuel_type_
+```
+* id (int|AUTO INCREMENT)
+* name (VARCHAR 255|NOT NULL)
+```
+
+### Table _car_transmission_
+```
+* id (int|AUTO INCREMENT)
+* name (VARCHAR 255|NOT NULL)
+```
+
+### Table _car_opinion_
+```
+* id (int|AUTO INCREMENT)
+* client (int|NOT NULL) - Reference to client.id
+* car (int|NOT NULL) - Reference to car.id
 * description (VARCHAR 255|NOT NULL)
+* rank (int|NOT NULL)
 ```
 
 ### Table _reservation_status_
@@ -81,7 +121,7 @@ http://aspercz.pl/asperczpl/programowanie/php/php/11_phpmyadmin/relacje_2.pdf
 ```
 * id (int|AUTO INCREMENT)
 * client (int|NOT NULL) - Reference to client.id
-* service (int|NOT NULL) - Reference to service.id
+* car (int|NOT NULL) - Reference to car.id
 * reservation_status (int|NOT NULL) - Reference to reservation_status.id
 * date_from (DATE|NOT NULL)
 * date_to (DATE|NOT NULL)
