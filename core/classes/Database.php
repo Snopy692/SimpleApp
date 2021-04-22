@@ -3,12 +3,14 @@
 namespace App\Core;
 use PDO;
 
-class Database {
+class Database
+{
 
-	protected $connection;
-	private $config;
+    protected $connection;
+    private $config;
 
-    private function loadConfig($key='default') {
+    private function loadConfig($key='default')
+    {
         $this->config=[
             'driver' => 'mysql',
             'host' => 'localhost',
@@ -18,14 +20,16 @@ class Database {
         ];
     }
 
-	public function __construct() {
+    public function __construct()
+    {
         self::loadConfig();
         self::getPDOConnection();
-	}
+    }
 
-	private function getPDOConnection() {
+    private function getPDOConnection()
+    {
         // Check if the connection is already established
-        if ($this->connection == NULL) {
+        if ($this->connection == null) {
             // Create the connection
             $dsn = "" .
                 $this->config['driver'] .
@@ -40,7 +44,8 @@ class Database {
         }
     }
 
-    public function getConnection() {
-    	return $this->connection;
+    public function getConnection()
+    {
+        return $this->connection;
     }
 }
