@@ -2,5 +2,6 @@
 
 namespace App\Core;
 
-class Security {
+class Security
+{
 }

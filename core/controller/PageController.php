@@ -4,11 +4,13 @@ namespace App\Controller;
 
 use App\Model\User;
 
-class PageController extends BaseController {
+class PageController extends BaseController
+{
 
-	public function index() {
-		$user=new User();
-		$user->setName('name');
-		print $user->getName();
-	}
+    public function index()
+    {
+        $user = new User();
+        $user->setName('name');
+        print $user->getName();
+    }
 }

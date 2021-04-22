@@ -2,23 +2,26 @@
 
 namespace App\Model;
 
-class User {
+class User
+{
 
-	private $id;
+    private $id;
 
-	private $name;
+    private $name;
 
-	private $password;
+    private $password;
 
-	private $data;
+    private $data;
 
-	private $status;
+    private $status;
 
-	public function setName($name) {
-		$this->name=$name;
-	}
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
 
-	public function getName() {
-		return $this->name;
-	}
+    public function getName()
+    {
+        return $this->name;
+    }
 }
