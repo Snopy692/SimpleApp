@@ -59,20 +59,26 @@
         },
         {
             "name": "josantonius/session",
-            "version": "1.0.0",
+            "version": "1.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Josantonius/PHP-Session.git",
-                "reference": "9bfb502b83da201483c728954540cbba4f6ad01e"
+                "reference": "08b09ad43927d172963d15da29259bcdf90a8f43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Josantonius/PHP-Session/zipball/9bfb502b83da201483c728954540cbba4f6ad01e",
-                "reference": "9bfb502b83da201483c728954540cbba4f6ad01e",
+                "url": "https://api.github.com/repos/Josantonius/PHP-Session/zipball/08b09ad43927d172963d15da29259bcdf90a8f43",
+                "reference": "08b09ad43927d172963d15da29259bcdf90a8f43",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0"
+                "php": "^5.6 || ^7.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.3 || ^2.8",
+                "phpmd/phpmd": "^2.6",
+                "phpunit/phpunit": "^5.7 || ^6.0",
+                "squizlabs/php_codesniffer": "^3.0"
             },
             "type": "library",
             "extra": {
@@ -92,8 +98,8 @@
             "authors": [
                 {
                     "name": "Josantonius",
-                    "email": "info@josantonius.com",
-                    "homepage": "https://github.com/josantonius",
+                    "email": "hello@josantonius.com",
+                    "homepage": "https://josantonius.com",
                     "role": "Developer"
                 }
             ],
@@ -104,10 +110,11 @@
                 "session"
             ],
             "support": {
-                "issues": "https://github.com/Josantonius/PHP-Session/issues",
-                "source": "https://github.com/Josantonius/PHP-Session/tree/1.0.0"
+                "forum": "http://stackoverflow.com/tags/josantonius/php-session",
+                "issues": "https://github.com/josantonius/php-session/issues",
+                "source": "https://github.com/josantonius/php-session"
             },
-            "time": "2017-01-17T04:12:22+00:00"
+            "time": "2018-05-04T08:30:19+00:00"
         }
     ],
     "packages-dev": [],
