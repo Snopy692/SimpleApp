@@ -85,6 +85,8 @@ http://aspercz.pl/asperczpl/programowanie/php/php/11_phpmyadmin/relacje_2.pdf
 * transmission_type (INT|NOT NULL) - Reference to transmission_type.id
 * seats_number (INT|NOT NULL)
 * fuel_consumption (FLOAT|NOT NULL)
+* engine_size (INT|NOT NULL)
+* power (INT|NOT NULL)
 * trunk_capacity (INT|NOT NULL)
 * min_driver_age (INT|NOT NULL)
 ```
