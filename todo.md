@@ -32,6 +32,7 @@
 - twig/twig (_Twig templates engine_)
 - swiftmailer/swiftmailer (_Sending mails library_)
 - squizlabs/php_codesniffer (_Check and fix PHP Syntax_)
+- foroco/php-browser-detection (_Detect browser/OS system_)
 
 ## Prepare HTML structure
 * core/views/region/header.tpl.php (included HTML5 doctype, links to stylesheets, include Roboto font from Google fonts [300,400 weight], FontAwesome)
@@ -42,6 +43,9 @@
 ```vendor/squizlabs/php_codesniffer/bin/phpcs /core --colors```
 * Fix codestyle
 ```vendor/squizlabs/php_codesniffer/bin/phpcbf /core```
+
+## Geolocation Service
+* Free IP Geolocation API (https://freegeoip.app/)
 
 ## DB TABLES
 Foregin keys create 
@@ -81,6 +85,8 @@ http://aspercz.pl/asperczpl/programowanie/php/php/11_phpmyadmin/relacje_2.pdf
 * transmission_type (INT|NOT NULL) - Reference to transmission_type.id
 * seats_number (INT|NOT NULL)
 * fuel_consumption (FLOAT|NOT NULL)
+* engine_size (INT|NOT NULL)
+* power (INT|NOT NULL)
 * trunk_capacity (INT|NOT NULL)
 * min_driver_age (INT|NOT NULL)
 ```
