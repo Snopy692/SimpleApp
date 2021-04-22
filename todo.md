@@ -31,10 +31,17 @@
 - symfony/yaml (_YML files parser_)
 - twig/twig (_Twig templates engine_)
 - swiftmailer/swiftmailer (_Sending mails library_)
+- squizlabs/php_codesniffer (_Check and fix PHP Syntax_)
 
 ## Prepare HTML structure
 * core/views/region/header.tpl.php (included HTML5 doctype, links to stylesheets, include Roboto font from Google fonts [300,400 weight], FontAwesome)
 * core/views/region/footer.tpl.php (include scripts eg. bootstrap, scripts.js)
+
+## PHP CodeSniffer (Linux)
+* Check PHP syntax
+```vendor/squizlabs/php_codesniffer/bin/phpcs /core --colors```
+* Fix codestyle
+```vendor/squizlabs/php_codesniffer/bin/phpcbf /core```
 
 ## DB TABLES
 Foregin keys create 
