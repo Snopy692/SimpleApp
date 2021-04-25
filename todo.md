@@ -85,6 +85,8 @@ http://aspercz.pl/asperczpl/programowanie/php/php/11_phpmyadmin/relacje_2.pdf
 * transmission_type (INT|NOT NULL) - Reference to transmission_type.id
 * seats_number (INT|NOT NULL)
 * fuel_consumption (FLOAT|NOT NULL)
+* year (INT|NOT NULL)
+* acceleration (FLOAT|NOT NULL)
 * engine_size (INT|NOT NULL)
 * power (INT|NOT NULL)
 * trunk_capacity (INT|NOT NULL)
@@ -145,6 +147,21 @@ http://aspercz.pl/asperczpl/programowanie/php/php/11_phpmyadmin/relacje_2.pdf
 * id (int|AUTO INCREMENT)
 * type (VARCHAR 255|NOT NULL)
 * timestamp (TIMESTAMP|NOT NULL)
+* message (TEXT|NOT NULL)
+```
+
+### Table _notification_type_
+```
+* id (int|AUTO INCREMENT)
+* name (VARCHAR 255|NOT NULL)
+```
+
+### Table _notification_
+```
+* id (int|AUTO INCREMENT)
+* uid (int|NOT NULL|) - Reference to user.id
+* notification_type (int|NOT NULL) - Reference to notification_type
+* priority (VARCHAR 255|NOT NULL)
 * message (TEXT|NOT NULL)
 ```
 
