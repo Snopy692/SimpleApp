@@ -150,6 +150,16 @@ http://aspercz.pl/asperczpl/programowanie/php/php/11_phpmyadmin/relacje_2.pdf
 * message (TEXT|NOT NULL)
 ```
 
+### Table _voucher_
+```
+* id (int|AUTO INCREMENT)
+* uid (int|NOT NULL|) - Reference to user.id
+* reservation_id (int|NOT NULL) - Reference to reservation
+* code (VARCHAR 12|NOT NULL)
+* used (BOOLEAN|NOT NULL|DEFAULT 0)
+* used_time (DATETIME|NULL)
+```
+
 ### Table _notification_type_
 ```
 * id (int|AUTO INCREMENT)
@@ -167,3 +177,4 @@ http://aspercz.pl/asperczpl/programowanie/php/php/11_phpmyadmin/relacje_2.pdf
 
 ## Layout
 * Admin panel similar to https://colorlib.com/wp/wp-content/uploads/sites/2/ample-admin-lite-freemium-admin-dashboard-template.jpg (only Bootstrap)
+* [Front page layout options](https://preview.themeforest.net/item/motors-automotive-cars-vehicle-boat-dealership-classifieds-wordpress-theme/full_screen_preview/13987211?clickid=UJYUCtWBZxyLTxPwUx0Mo3EoUkB0eg14t24YUA0&iradid=275988&iradtype=ONLINE_TRACKING_LINK&irgwc=1&irmptype=mediapartner&irpid=102006&mp_value1=&utm_campaign=af_impact_radius_102006&utm_medium=affiliate&utm_source=impact_radius) 
