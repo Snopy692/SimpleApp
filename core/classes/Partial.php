@@ -2,5 +2,6 @@
 
 namespace App\Core;
 
-class Partial {
+class Partial
+{
 }

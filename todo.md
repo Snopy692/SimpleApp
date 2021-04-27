@@ -47,7 +47,7 @@
 ## Geolocation Service
 * Free IP Geolocation API (https://freegeoip.app/)
 
-## DB TABLES
+## DB TABLES - DONE
 Foregin keys create 
 http://aspercz.pl/asperczpl/programowanie/php/php/11_phpmyadmin/relacje_2.pdf
 
@@ -85,6 +85,8 @@ http://aspercz.pl/asperczpl/programowanie/php/php/11_phpmyadmin/relacje_2.pdf
 * transmission_type (INT|NOT NULL) - Reference to transmission_type.id
 * seats_number (INT|NOT NULL)
 * fuel_consumption (FLOAT|NOT NULL)
+* year (INT|NOT NULL)
+* acceleration (FLOAT|NOT NULL)
 * engine_size (INT|NOT NULL)
 * power (INT|NOT NULL)
 * trunk_capacity (INT|NOT NULL)
@@ -148,5 +150,31 @@ http://aspercz.pl/asperczpl/programowanie/php/php/11_phpmyadmin/relacje_2.pdf
 * message (TEXT|NOT NULL)
 ```
 
+### Table _voucher_
+```
+* id (int|AUTO INCREMENT)
+* uid (int|NOT NULL|) - Reference to user.id
+* reservation_id (int|NOT NULL) - Reference to reservation
+* code (VARCHAR 12|NOT NULL)
+* used (BOOLEAN|NOT NULL|DEFAULT 0)
+* used_time (DATETIME|NULL)
+```
+
+### Table _notification_type_
+```
+* id (int|AUTO INCREMENT)
+* name (VARCHAR 255|NOT NULL)
+```
+
+### Table _notification_
+```
+* id (int|AUTO INCREMENT)
+* uid (int|NOT NULL|) - Reference to user.id
+* notification_type (int|NOT NULL) - Reference to notification_type
+* priority (VARCHAR 255|NOT NULL)
+* message (TEXT|NOT NULL)
+```
+
 ## Layout
 * Admin panel similar to https://colorlib.com/wp/wp-content/uploads/sites/2/ample-admin-lite-freemium-admin-dashboard-template.jpg (only Bootstrap)
+* [Front page layout options](https://preview.themeforest.net/item/motors-automotive-cars-vehicle-boat-dealership-classifieds-wordpress-theme/full_screen_preview/13987211?clickid=UJYUCtWBZxyLTxPwUx0Mo3EoUkB0eg14t24YUA0&iradid=275988&iradtype=ONLINE_TRACKING_LINK&irgwc=1&irmptype=mediapartner&irpid=102006&mp_value1=&utm_campaign=af_impact_radius_102006&utm_medium=affiliate&utm_source=impact_radius) 
