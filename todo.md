@@ -47,7 +47,7 @@
 ## Geolocation Service
 * Free IP Geolocation API (https://freegeoip.app/)
 
-## DB TABLES
+## DB TABLES - DONE
 Foregin keys create 
 http://aspercz.pl/asperczpl/programowanie/php/php/11_phpmyadmin/relacje_2.pdf
 
