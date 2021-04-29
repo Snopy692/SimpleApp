@@ -1,5 +1,15 @@
 <?php
 
+  /**
+   * User
+   * 
+   * 
+   * @author     Matt & Oliver 
+   * 
+   * The User class sets & gets user data from the database and returns it to user. 
+   * 
+   */
+
 namespace App\Model;
 
 class User
@@ -14,43 +24,76 @@ class User
     private $data;
 
     private $status;
-// NAME
-    public function setName($name)
+    /**
+     * Getter for id. @var type int
+     */
+
+    public function getId() 
+    {
+        return $id;
+    }
+
+    /**
+     * Setter for name. @var type string
+     */
+
+    public function setName(string $name)
     {
         $this->name = $name;
     }
 
-    public function getName()
+    /**
+     * Getter for name. @var type string
+     */
+
+    public function getName() :string
     {
         return $this->name;
     }
-//PASSWORD
-    public function setPassword($password)
+
+    /**
+     * Setter for password. @var type string
+     */
+
+    public function setPassword(string $password)
     {
         $this->password = $password;
     }
+    /**
+     * Getter for password. @var type string
+     */
 
-    public function getPassword()
+    public function getPassword() :string
     {
         return $this->password;
     }
- //DATA   
-    public function setData($data)
+     /**
+     * Setter for data. @var type string
+     */
+    public function setData(string $data)
     {
         $this->data = $data;
     }
 
-    public function getData()
+    /**
+     * Getter for data. @var type string
+     */
+
+    public function getData() :string
     {
         return $this->data;
     }
-//STATUS
-    public function setStatus($status)
+    /**
+     * Setter for status. @var type string
+     */
+    public function setStatus(string $status)
     {
         $this->status = $status;
     }
-
-    public function getStatus()
+     /**
+     * Getter for status. @var type string
+     */
+    public function getStatus() :string
     {
         return $this->status;
     }
