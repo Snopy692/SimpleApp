@@ -1,74 +1,95 @@
 <?php
 
-  /**
-   * User
-   * 
-   * 
-   * @author     Matt & Oliver 
-   * 
-   * The User class sets & gets user data from the database and returns it to user. 
-   * 
-   */
-
 namespace App\Model;
 
+/**
+* Class User
+*
+* The User model class sets & gets user data from the database and returns it to user.
+*/
 class User
 {
 
+    /**
+     * @var integer
+     */
     private $id;
 
+    /**
+     * @var string
+     */
     private $name;
 
+    /**
+     * @var string
+     */
     private $password;
 
+    /**
+     * @var string
+     */
     private $data;
 
-    private $status;
     /**
-     * Getter for id. @var type int
+     * @var bool
      */
+    private $status;
 
-    public function getId() 
+    /**
+     * Getter for id.
+     *
+     * @return int
+     */
+    public function getId()
     {
         return $id;
     }
 
     /**
-     * Setter for name. @var type string
+     * Setter for name.
+     * 
+     * @param string $name
      */
-
     public function setName(string $name)
     {
         $this->name = $name;
     }
 
     /**
-     * Getter for name. @var type string
-     */
-
-    public function getName() :string
+     * Getter for name.
+     * 
+     * @return string
+     */  
+    public function getName(): string
     {
         return $this->name;
     }
 
     /**
-     * Setter for password. @var type string
+     * Setter for password.
+     * 
+     * @param string $password
+     * @return string
      */
-
     public function setPassword(string $password)
     {
         $this->password = $password;
     }
+    
     /**
-     * Getter for password. @var type string
+     * Getter for password.
+     * 
+     * @return string
      */
-
-    public function getPassword() :string
+    public function getPassword(): string
     {
         return $this->password;
     }
-     /**
-     * Setter for data. @var type string
+  
+    /**
+     * Setter for data.
+     * 
+     * @param string $data
      */
     public function setData(string $data)
     {
@@ -76,24 +97,31 @@ class User
     }
 
     /**
-     * Getter for data. @var type string
+     * Getter for data.
+     * 
+     * @return string
      */
-
-    public function getData() :string
+    public function getData(): string
     {
         return $this->data;
     }
+    
     /**
-     * Setter for status. @var type string
+     * Setter for status.
+     * 
+     * @param bool
      */
-    public function setStatus(string $status)
+    public function setStatus(bool $status)
     {
         $this->status = $status;
     }
-     /**
-     * Getter for status. @var type string
+
+    /**
+     * Getter for status.
+     * 
+     * @return bool
      */
-    public function getStatus() :string
+    public function getStatus(): bool
     {
         return $this->status;
     }
