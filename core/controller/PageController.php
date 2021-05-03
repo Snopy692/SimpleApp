@@ -3,20 +3,21 @@
 namespace App\Controller;
 
 use App\Model\User;
-use App\Repository\UserRepository;
+use App\Core\Form;
 
 class PageController extends BaseController
 {
+    /*public function __construct() {
+    parent::__construct();
+    }*/
 
     public function index()
     {
-        /* $user = new User();
-        $user->setName('name');
-        print $user->getName();
+        $form = new Form('user_login');
+        
+        // !! TODO
+        // $form->add('login',... some attributes ...)
 
-        $repository=new UserRepository();
-        $repository->getAll();*/
-
-        return $this->render('page/index');
+        return $this->render('page/index', ['form' => $form]);
     }
 }

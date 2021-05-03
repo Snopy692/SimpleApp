@@ -7,7 +7,7 @@ namespace App\Model;
  *
  * The Client model class sets & gets clients data from the database and returns it to user.
  */
-class Client
+class Client implements ModelInterface
 {
      /**
       * @var integer
@@ -294,4 +294,12 @@ class Client
         return $this->vatNumber;
     }
 
+    /**
+     * From array
+     * 
+     * @var array
+     */
+    public function fromArray($values)
+    {
+    }
 }

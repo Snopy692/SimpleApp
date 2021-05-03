@@ -7,7 +7,7 @@ namespace App\Model;
  *
  * The User model class sets & gets user data from the database and returns it to user.
  */
-class User
+class User implements ModelInterface
 {
 
     /**
@@ -124,5 +124,14 @@ class User
     public function getStatus(): bool
     {
         return $this->status;
+    }
+
+    /**
+     * From array
+     * 
+     * @var array
+     */
+    public function fromArray($values)
+    {
     }
 }

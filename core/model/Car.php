@@ -147,4 +147,12 @@ class Car
         return $this->carType;
     }
 
+    /**
+     * From array
+     * 
+     * @var array
+     */
+    public function fromArray($values)
+    {
+    }
 }
