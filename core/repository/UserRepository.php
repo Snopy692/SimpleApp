@@ -3,12 +3,22 @@
 namespace App\Repository;
 use PDO;
 
-class UserRepository extends BaseRepository
+class UserRepository extends BaseRepository implements RepositoryInterface
 {
 
     private $table = 'user';
 
-    public function getAll()
+    public function find(int $id)
+    {
+    }
+    public function findAll()
+    {
+    }
+    public function findBy($properties = [])
+    {
+    }
+
+    /*public function getAll()
     {
 
         $query = $this->db->prepare("SELECT * FROM `$this->table`");
@@ -16,5 +26,5 @@ class UserRepository extends BaseRepository
         $result = $query->fetch(PDO::FETCH_ASSOC);
     
         echo '<pre>'; print_r($result);
-    }
+    }*/
 }

@@ -10,11 +10,13 @@ class PageController extends BaseController
 
     public function index()
     {
-        $user = new User();
+        /* $user = new User();
         $user->setName('name');
         print $user->getName();
 
         $repository=new UserRepository();
-        $repository->getAll();
+        $repository->getAll();*/
+
+        return $this->render('page/index');
     }
 }

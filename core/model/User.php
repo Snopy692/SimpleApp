@@ -3,10 +3,10 @@
 namespace App\Model;
 
 /**
-* Class User
-*
-* The User model class sets & gets user data from the database and returns it to user.
-*/
+ * Class User
+ *
+ * The User model class sets & gets user data from the database and returns it to user.
+ */
 class User
 {
 
@@ -68,7 +68,7 @@ class User
     /**
      * Setter for password.
      * 
-     * @param string $password
+     * @param  string $password
      * @return string
      */
     public function setPassword(string $password)

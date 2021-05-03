@@ -3,12 +3,11 @@
 namespace App/Model
 
 /**
-* Class Car
-*
-* The Car model class sets & gets user data from the database and returns it to user.
-*/
-class Car 
-
+ * Class Car
+ *
+ * The Car model class sets & gets user data from the database and returns it to user.
+ */
+class Car
 {
     /**
      * @var integer
@@ -47,7 +46,7 @@ class Car
 
     /**
      * @var float
-    */
+     */
     private $fuelConsumption;
 
     /**
