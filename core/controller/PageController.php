@@ -16,7 +16,7 @@ class PageController extends BaseController
         $form = new Form('user_login');
         
         // !! TODO
-        // $form->add('login',... some attributes ...)
+        $form->addTextfield('login', 'Login', ['placeholder' => 'Login']);
 
         return $this->render('page/index', ['form' => $form]);
     }
