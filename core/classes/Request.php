@@ -6,14 +6,23 @@ class Request
 {
     public function getMethod(): string
     {
+
     }
 
     public function isPost(): bool
     {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') 
+        {
+               
+        }
     }
 
     public function isGet(): bool
     {
+        if ($_SERVER['REQUEST_METHOD'] === 'GET') 
+        {
+               
+        }
     }
 
     public function get(string $name)
