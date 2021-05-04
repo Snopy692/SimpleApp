@@ -1,6 +1,6 @@
 <?php
 
-namespace App/Model
+namespace App\Model;
 
 /**
  * Class Car
@@ -145,6 +145,206 @@ class Car
     public function getCarType() :int
     {
         return $this->carType;
+    }
+
+     /**
+     * Setter for fuelType
+     * 
+     * @param int $fuelType
+     */
+    public function setfuelType(int $fuelType)
+    {
+        $this->fuelType = $fuelType;
+    }
+
+    /**
+     * Getter for fuelType
+     * 
+     * @var integer
+     */
+    public function getfuelType() :int
+    {
+        return $this->fuelType;
+    }
+
+     /**
+     * Setter for transmissionType
+     * 
+     * @param int $transmissionType
+     */
+    public function setTransmissionType(int $transmissionType)
+    {
+        $this->transmissionType = $transmissionType;
+    }
+
+    /**
+     * Getter for transmissionType
+     * 
+     * @var integer
+     */
+    public function getTransmissionType() :int
+    {
+        return $this->transmissionType;
+    }
+
+    /**
+     * Setter for seatsNumber
+     * 
+     * @param int $seatsNumbere
+     */
+    public function setSeatsNumber(int $seatsNumber)
+    {
+        $this->seatsNumber = $seatsNumber;
+    }
+
+    /**
+     * Getter for seatsNumber
+     * 
+     * @var integer
+     */
+    public function getSeatsNumber() :int
+    {
+        return $this->seatsNumber;
+    }
+
+    /**
+     * Setter for fuelConsumption
+     * 
+     * @param float $fuelConsumption
+     */
+    public function setFuelConsumption(float $fuelConsumption)
+    {
+        $this->fuelConsumption = $fuelConsumption;
+    }
+
+    /**
+     * Getter for fuelConsumption
+     * 
+     * @var float
+     */
+    public function getFuelConsumption() :float
+    {
+        return $this->fuelConsumption;
+    }
+
+    /**
+     * Setter for year
+     * 
+     * @param int $year
+     */
+    public function setYear(int $year)
+    {
+        $this->year = $year;
+    }
+
+    /**
+     * Getter for year
+     * 
+     * @var integer
+     */
+    public function getYear() :int
+    {
+        return $this->year;
+    }
+
+    /**
+     * Setter for acceleration 
+     * 
+     * @param float $acceleration
+     */
+    public function setAcceleration (float $acceleration)
+    {
+        $this->acceleration = $acceleration;
+    }
+
+    /**
+     * Getter for acceleration 
+     * 
+     * @var float
+     */
+    public function getAcceleration() :float
+    {
+        return $this->acceleration;
+    }
+    
+    /**
+     * Setter for engineSize
+     * 
+     * @param int $engineSize
+     */
+    public function setEngineSize(int $engineSize)
+    {
+        $this->engineSize = $engineSize;
+    }
+
+    /**
+     * Getter for engineSize
+     * 
+     * @var integer
+     */
+    public function getEngineSize() :int
+    {
+        return $this->engineSize;
+    }
+    
+    /**
+     * Setter for power
+     * 
+     * @param int $power
+     */
+    public function setPower(int $power)
+    {
+        $this->power = $power;
+    }
+
+    /**
+     * Getter for power
+     * 
+     * @var integer
+     */
+    public function getPower() :int
+    {
+        return $this->power;
+    }
+    
+    /**
+     * Setter for trunkCapacity
+     * 
+     * @param int $trunkCapacity
+     */
+    public function setTrunkCapacity(int $trunkCapacity)
+    {
+        $this->trunkCapacity = $trunkCapacity;
+    }
+
+    /**
+     * Getter for trunkCapacity
+     * 
+     * @var integer
+     */
+    public function getTrunkCapacity() :int
+    {
+        return $this->trunkCapacity;
+    }
+    
+    /**
+     * Setter for minDriverAge
+     * 
+     * @param int $minDriverAge
+     */
+    public function setMinDriverAge(int $minDriverAge)
+    {
+        $this->minDriverAge = $minDriverAge;
+    }
+
+    /**
+     * Getter for minDriverAge
+     * 
+     * @var integer
+     */
+    public function getMinDriverAge() :int
+    {
+        return $this->minDriverAge;
     }
 
     /**
